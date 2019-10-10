@@ -1,6 +1,6 @@
 FROM node:alpine AS builder
 WORKDIR '/app'
-COPY package.json .
+COPY package*.json ./
 CMD nmp install
 COPY . .
 CMD nmp run build
